@@ -1,29 +1,33 @@
 package com.otus.homeprojekt;
 
+import com.otus.homeprojekt.animal.Animal;
+import com.otus.homeprojekt.animal.birds.Duck;
+import com.otus.homeprojekt.animal.birds.Flying;
+import com.otus.homeprojekt.animal.pets.Cat;
+
 public class Main {
 
     public static void main(String[] args){
-       Cat Kisa =new Cat();
-        Kisa.setName("Куська");
-        Kisa.setAge(5);
-        Kisa.setWeight(8);
-        Kisa.setColor("рыжий");
-       System.out.println(Kisa.toString());
-        Kisa.Say();
+        Animal kisa = new Cat();
 
-       Dog Bob=new Dog();
-       Bob.toString();
-       Bob.Say();
+        kisa.setName("Куська");
+        kisa.setAge(1);
+        kisa.setWeight(8);
+        kisa.setColor("рыжий");
 
+        System.out.println(kisa);
+        kisa.Say();
 
-        Duck Donald=new Duck();
-        Donald.setName("Дональд");
-        Donald.setAge(2);
-        Donald.setColor("белый");
-        Donald.setWeight(5);
-        System.out.println(Donald.toString());
-        Donald.Say();
-        Donald.Fly();
+        Flying donald = new Duck();
+
+        donald.setName("Дональд");
+        donald.setAge(5);
+        donald.setColor("белый");
+        donald.setWeight(5);
+
+        System.out.println(donald);
+        donald.Say();
+        donald.fly();
 
     }
 

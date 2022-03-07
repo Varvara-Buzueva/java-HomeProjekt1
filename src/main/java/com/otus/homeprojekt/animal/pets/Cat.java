@@ -1,4 +1,6 @@
-package com.otus.homeprojekt;
+package com.otus.homeprojekt.animal.pets;
+
+import com.otus.homeprojekt.animal.Animal;
 
 public class Cat extends Animal {
 
